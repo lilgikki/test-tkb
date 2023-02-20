@@ -6,13 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="">
     <link rel="stylesheet" href="css/style.min.css">
-    <title></title>
+    <title>Тестовое ТКБ</title>
   </head>
   <body>
-    <header></header>
-    <main>
-    </main>
-    <footer></footer>
+    <div class="wrapper">
+      <nav class="main-nav">
+        <div class="main-nav__container">
+          <b class="main-nav__title">Меню</b>
+          <ul class="main-nav__list list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Пункт 1</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Пункт 2</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Пункт 3</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Пункт 4</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="wrapper__content">
+        <header class="main-header">
+          <div class="main-header__container container">
+            <form>
+              <label for="search">
+                <span class="visually-hidden">Строка поиска</span>
+                <input type="search" id="search" placeholder="Поиск">
+              </label>
+            </form>
+          </div>
+        </header>
+        <main class="main-index">
+          <h1 class="visually-hidden">Главная страница</h1>
+          <section class="people">
+            <h2 class="visually-hidden">Раздел с таблицей</h2>
+            <div class="people__container container">
+              <table class="people__table">
+                <tr class="people__main">
+                  <td class="people__item">ФИО</td>
+                  <td class="people__item">Должность</td>
+                  <td class="people__item">Возраст</td>
+                  <td class="people__item">Компетенции</td>
+                </tr>
+              </table>
+              <form method="get" id="form">
+                <div class="people__input people__input--name">
+                  <label class="visually-hidden" for="name">Строка ФИО</label>
+                  <input type="text" id="name" name="form-name" required pattern="[A-Za-zА-Яа-яЁё]">
+                </div>
+                <div class="people__input people__input--job">
+                  <label class="visually-hidden" for="job">Строка выбора должности</label>
+                  <select id="job" name="form-job">
+                    <option value="Аналитик">Аналитик</option>
+                    <option value="Менеджер" selected>Менеджер</option>
+                    <option value="Програмист">Програмист</option>
+                    <option value="Юрист">Юрист</option>
+                  </select>
+                </div>
+                <div class="people__input people__input--age">
+                  <label class="visually-hidden" for="age">Строка возраста</label>
+                  <input type="number" id="age" name="form-age" required>
+                </div>
+                <div class="people__input people__input--about">
+                  <label class="visually-hidden" for="about">Строка компетенций</label>
+                  <textarea id="about" name="form-about" required></textarea>
+                </div>
+                <div class="people__form-buttons">
+                  <button class="people__form-button people__form-button--submit" type="submit">Отправить</button>
+                  <button class="people__form-button people__form-button--add" type="submit">Добавить</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+        <footer class="main-footer">
+          <div class="main-footer__container container">
+            <a class="main-footer__logo" href="">Kostyleva 2023</a>
+          </div>
+        </footer>
+      </div>
+      <template id="table-row">
+        <tr class="people__row">
+          <td class="people__item people__item--name"></td>
+          <td class="people__item people__item--job"></td>
+          <td class="people__item people__item--age"></td>
+          <td class="people__item people__item--about"></td>
+          <td class="people__button-inner">
+            <button class="people__button" type="button">
+              <span class="visually-hidden">Удалить строку</span>
+            </button>
+          </td>
+        </tr>
+      </template>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

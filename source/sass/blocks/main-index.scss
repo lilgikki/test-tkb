@@ -1,6 +1,7 @@
 .main-index {
-  overflow-x: hidden;
-  min-width: 320px;
-  width: 100%;
-  background-color: $color-default-white;
+  background-color: $color-light-blue;
+}
+
+.main-index__container {
+  margin: auto auto auto 0;
 }

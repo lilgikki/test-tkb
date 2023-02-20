@@ -1,0 +1,20 @@
+.main-footer {
+  border-top: 1px solid #D8E3FE;
+}
+
+.main-footer__container {
+  margin: auto auto auto 0;
+  padding: 20px 86px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-footer__logo {
+  user-select: none;
+  cursor: default;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-dark-blue;
+  opacity: 0.7;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "projects-base",
+  "name": "test for tkb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -53,6 +53,7 @@
     "imagemin-svgo": "^10.0.1",
     "postcss": "^8.4.21",
     "postcss-scss": "^4.0.6",
+    "pristinejs": "^1.0.0",
     "sass": "^1.58.0",
     "stylelint": "^14.16.1",
     "stylelint-scss": "^4.3.0",

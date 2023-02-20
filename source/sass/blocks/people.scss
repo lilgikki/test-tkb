@@ -1,0 +1,152 @@
+.people__table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.people__row,
+.people__main {
+  width: 900px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 3fr;
+}
+
+.people__main {
+  background-color: $color-dark-blue;
+  color: $color-light-blue;
+}
+
+.people__main .people__item{
+  font-weight: 700;
+  font-size: 25px;
+  color: $color-light-blue;
+}
+
+.people__row:nth-of-type(2n+1) {
+  background-color: $color-default-white;
+}
+
+.people__row:nth-of-type(2n+1) .people__item{
+  border-right: 1px solid $color-light-blue;
+}
+
+.people__row:nth-of-type(2n+1) .people__item:nth-of-type(4n) {
+  border-right: none;
+}
+
+.people__row:nth-of-type(2n) {
+  background-color: $color-light-blue;
+}
+
+.people__row:nth-of-type(2n) .people__item {
+  border-right: 1px solid $color-default-white;
+}
+
+.people__row:nth-of-type(2n) .people__item:nth-of-type(4n) {
+  border-right: none;
+}
+
+.people__item {
+  max-width: 200px;
+  color: $color-dark-blue;
+  padding: 10px;
+}
+
+.people__item:nth-of-type(4n) {
+  max-width: 300px;
+}
+
+.people__button-inner {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.people__button {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0;
+  width: 20px;
+  height: 5px;
+  background-color: $color-dark-blue;
+  border-radius: 3px;
+  border: none;
+}
+
+.people__button:hover {
+  box-shadow: 0 0 5px $color-dark-blue;
+}
+
+.people__button:active {
+  background-color: $color-default-white;
+}
+
+.people__container form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 3fr;
+}
+
+.people__form-buttons {
+  margin-top: 15px;
+  grid-column: -1/1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.people__form-button {
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  font-weight: 500;
+  border: 2px solid $color-dark-blue;
+  border-radius: 5px;
+  background-color: $color-default-white;
+  color: $color-dark-blue;
+}
+
+.people__form-button:hover {
+  box-shadow: 0 0 10px $color-dark-blue;
+}
+
+.people__form-button:active {
+  background-color: $color-light-blue;
+}
+
+.people__input {
+  min-height: 60px;
+}
+
+.people__input input,
+.people__input select,
+.people__input textarea {
+  resize: none;
+  color: $color-dark-blue;
+  padding: 10px;
+  width: 100%;
+  min-height: 60px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  border: 1px solid $color-dark-blue;
+}
+
+.people__input option {
+  padding: 10px;
+  color: $color-dark-blue;
+  border-radius: 5px;
+  border: 1px solid $color-dark-blue;
+}
+
+.people__input input:focus-visible,
+.people__input select:focus-visible,
+.people__input textarea:focus-visible {
+  outline: 1px $color-dark-blue auto;
+}
+
+.people__input label {
+  width: 0;
+  height: 0;
+}

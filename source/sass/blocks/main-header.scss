@@ -1,0 +1,37 @@
+.main-header {
+  width: 100%;
+  border-bottom: 1px solid #D8E3FE;
+}
+
+.main-header__container {
+  margin: auto auto auto 0;
+  padding: 20px 86px;
+}
+
+.main-header__container form {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.main-header__container input {
+  transition: 0.6s;
+  color: $color-dark-blue;
+  border: none;
+  width: 300px;
+  background-color: $color-light-blue;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba($color-dark-blue, $alpha: 0.2);
+}
+
+.main-header__container input:hover {
+  box-shadow: 3px 3px 10px rgba($color-dark-blue, $alpha: 0.5);
+}
+
+.main-header__container input:focus-visible {
+  outline: 1px $color-dark-blue auto;
+}
+
+.main-header__container input::placeholder {
+  color: $color-dark-blue;
+}
